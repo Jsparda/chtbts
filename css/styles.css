@@ -12,11 +12,20 @@ h1 {
     color: white;
 }
 
+.alineacionH1 {
+    margin-block: 10px 10px;
+    text-align: left;
+}
+
 h2, i {
     font-size: 20px;
     text-align: center;
     color: white;
     margin: 5px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 small {
@@ -71,4 +80,5 @@ iframe {
     background-color: #212529;
     color: #999999;
     text-align: center;
+    margin-top: 10px;
 }
