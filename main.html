@@ -35,13 +35,13 @@
         </ul>
       </div>
     </div>
-    <img src="assets/logo2.png" alt="logoUAM" width="230" height="100">
+    <img src="assets/logo2.png" alt="logoUAM" width="200" height="85">
 </nav>
 
 <body>
     <h1 class="marghs">Programación web || <small>Acceso a BDR</small></h1>
     <div class="container principal background">
-        <section class="sec-1">
+        <section class="sec-1" style="display: block;" id="teoOn">
             <div class="center-icon">
                 <i class="far fa-comment-dots fa-3x"></i>
                 <h2>Felicity teórica</h2>
@@ -51,18 +51,35 @@
             </div>
         </section>
 
-        <section class="sec-2">
+        <section class="sec-2" style="display: none;" id="practOn">
             <div class="center-icon">
                 <i class="fas fa-users fa-3x"></i>
                 <h2>Felicity programadora</h2>
             </div>
             <div class="chat-content">
-                <iframe src="Aquí va el link de chat" frameborder="0"></iframe>
-            </div>
-        </section>
-    </div>
-  </body>
+                <iframe src="https://webchat.snatchbot.me/90a127952ffc9a3e6bfaea55feea49d84e222bf0179ffef5f377291609661e54" frameborder="0"></iframe>
+              </div>
+            </section>
+          </div>
+          <div class="alineacionBtn">
+            <button class="btn btn-info" onclick="hidde()" id="btnEx">Presiona aquí cuando hayas terminado</button>
+          </div>
+        </body>
   <footer class="footer-1">
       Copyright 2021 || Felicity &#174
   </footer>
+  <script>
+    function hidde(){
+      var hideStatus = document.getElementById("practOn");
+      var disBtn = document.getElementById("btnEx");
+
+      if(hideStatus.style.display === "none"){
+        hideStatus.style.display = "block"
+        disBtn.disabled = true;
+      }
+      else {
+        hideStatus.style.display = "none"
+      }
+    }
+  </script>
 </html>
